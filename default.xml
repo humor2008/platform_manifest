@@ -36,7 +36,7 @@
 	   sync-f="true" />
 
 <!-- BEGIN CYANOGENMOD -->
-  <project path="build" name="humor2008/android_build" groups="pdk" remote="github" revision="marshmallow" />
+  <project path="build" name="humor2008/android_build" groups="pdk" remote="github" revision="marshmallow" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="android" name="platform_manifest" remote="humor"/>
