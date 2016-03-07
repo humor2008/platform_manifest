@@ -16,6 +16,10 @@
   <remote  name="rr"
 	   fetch="https://github.com/ResurrectionRemix"
 	   revision="marshmallow" />
+	   
+  <remote  name="humor"
+	   fetch="https://github.com/humor2008"
+	   revision="marshmallow" />
 
   <remote name="rr-d"
 	  fetch="https://github.com/ResurrectionRemix-Devices"
@@ -32,10 +36,10 @@
 	   sync-f="true" />
 
 <!-- BEGIN CYANOGENMOD -->
-  <project path="build" name="android_build" groups="pdk" remote="rr" >
+  <project path="build" name="humor2008/android_build" groups="pdk" remote="github" revision="marshmallow" />
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="android" name="platform_manifest" remote="rr"/>
+  <project path="android" name="platform_manifest" remote="humor"/>
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
   <project path="art" name="CyanogenMod/android_art" groups="pdk" />
   <project path="bionic" name="CyanogenMod/android_bionic" groups="pdk" />
